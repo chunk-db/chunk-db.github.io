@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[24],{"/EgF":function(n,o){},ym6D:function(n,o,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/todolist/_store/store.types",function(){return _("/EgF")}])}},[["ym6D",0]]]);

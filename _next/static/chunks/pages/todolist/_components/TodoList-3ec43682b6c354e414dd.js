@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[17],{drdN:function(o,n,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/todolist/_components/TodoList",function(){return _("gEkX")}])}},[["drdN",0,1,4,5]]]);
