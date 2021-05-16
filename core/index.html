@@ -82,7 +82,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
+						<a href="enums/chunktype.html" class="tsd-kind-icon">Chunk<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/priority.html" class="tsd-kind-icon">Priority</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/abstractchunk.html" class="tsd-kind-icon">Abstract<wbr>Chunk</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/chunkdb.html" class="tsd-kind-icon">ChunkDB</a>
@@ -90,17 +96,47 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/collectionconfig.html" class="tsd-kind-icon">Collection<wbr>Config</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/dataspace.html" class="tsd-kind-icon">Data<wbr>Space</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/inmemorychunkstorage.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Chunk<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/incrementalchunk.html" class="tsd-kind-icon">Incremental<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/mergechunk.html" class="tsd-kind-icon">Merge<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/notfoundchunkerror.html" class="tsd-kind-icon">Not<wbr>Found<wbr>Chunk<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/query.html" class="tsd-kind-icon">Query</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/snapshotchunk.html" class="tsd-kind-icon">Snapshot<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/space.html" class="tsd-kind-icon">Space</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/temporarytransactionchunk.html" class="tsd-kind-icon">Temporary<wbr>Transaction<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/updatechunk.html" class="tsd-kind-icon">Update<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ichunk.html" class="tsd-kind-icon">IChunk</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/ichunkdbconfig.html" class="tsd-kind-icon">IChunkDBConfig</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/icollectiontypes.html" class="tsd-kind-icon">ICollection<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/igenericchunk.html" class="tsd-kind-icon">IGeneric<wbr>Chunk</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/irefcollection.html" class="tsd-kind-icon">IRef<wbr>Collection</a>
@@ -109,10 +145,19 @@
 						<a href="interfaces/ispace.html" class="tsd-kind-icon">ISpace</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/istoragecachedriver.html" class="tsd-kind-icon">IStorage<wbr>Cache<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/istoragedriver.html" class="tsd-kind-icon">IStorage<wbr>Driver</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/itransactionconfig.html" class="tsd-kind-icon">ITransaction<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/runner.html" class="tsd-kind-icon">Runner</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/subscription.html" class="tsd-kind-icon">Subscription</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#chunkid" class="tsd-kind-icon">ChunkID</a>
@@ -125,6 +170,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#id" class="tsd-kind-icon">ID</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#irecord" class="tsd-kind-icon">IRecord</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#primitive" class="tsd-kind-icon">Primitive</a>
@@ -140,6 +188,27 @@
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#uuid" class="tsd-kind-icon">UUID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#arraytomap" class="tsd-kind-icon">array<wbr>ToMap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#arraytoobject" class="tsd-kind-icon">array<wbr>ToObject</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#chunkfactory" class="tsd-kind-icon">chunk<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#isgenericchunk" class="tsd-kind-icon">is<wbr>Generic<wbr>Chunk</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#maptoarray" class="tsd-kind-icon">map<wbr>ToArray</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#objecttoarray" class="tsd-kind-icon">object<wbr>ToArray</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#objecttomap" class="tsd-kind-icon">object<wbr>ToMap</a>
 					</li>
 				</ul>
 			</nav>
@@ -158,6 +227,10 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>

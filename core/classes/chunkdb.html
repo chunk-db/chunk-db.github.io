@@ -95,8 +95,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chunkdb.html#activetransactions" class="tsd-kind-icon">active<wbr>Transactions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chunkdb.html#collections" class="tsd-kind-icon">collections</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chunkdb.html#ready" class="tsd-kind-icon">ready</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chunkdb.html#ready_" class="tsd-kind-icon">ready$</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chunkdb.html#spacesubscriptions" class="tsd-kind-icon">space<wbr>Subscriptions</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chunkdb.html#spaces" class="tsd-kind-icon">spaces</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="chunkdb.html#storage" class="tsd-kind-icon">storage</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="chunkdb.html#storagedriver" class="tsd-kind-icon">storage<wbr>Driver</a></li>
@@ -106,12 +104,14 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="chunkdb.html#applytransaction" class="tsd-kind-icon">apply<wbr>Transaction</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="chunkdb.html#collection" class="tsd-kind-icon">collection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#getflatchain" class="tsd-kind-icon">get<wbr>Flat<wbr>Chain</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#run" class="tsd-kind-icon">run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#space" class="tsd-kind-icon">space</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#subscribe" class="tsd-kind-icon">subscribe</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="chunkdb.html#transaction" class="tsd-kind-icon">transaction</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="chunkdb.html#updatespacerefs" class="tsd-kind-icon">update<wbr>Space<wbr>Refs</a></li>
 							</ul>
 						</section>
 					</div>
@@ -129,7 +129,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L32">ChunkDB.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L38">ChunkDB.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -157,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">active<wbr>Transactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Accessor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L30">ChunkDB.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L37">ChunkDB.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">collections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">NAME</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">NAME</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">NAME</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L23">ChunkDB.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L31">ChunkDB.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,37 +177,17 @@
 					<div class="tsd-signature tsd-kind-icon">ready<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L26">ChunkDB.ts:26</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="ready_" class="tsd-anchor"></a>
-					<h3>ready$</h3>
-					<div class="tsd-signature tsd-kind-icon">ready$<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L27">ChunkDB.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="spacesubscriptions" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> space<wbr>Subscriptions</h3>
-					<div class="tsd-signature tsd-kind-icon">space<wbr>Subscriptions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L32">ChunkDB.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L34">ChunkDB.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="spaces" class="tsd-anchor"></a>
-					<h3>spaces</h3>
-					<div class="tsd-signature tsd-kind-icon">spaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="space.html" class="tsd-signature-type" data-tsd-kind="Class">Space</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> spaces</h3>
+					<div class="tsd-signature tsd-kind-icon">spaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Spaces</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L24">ChunkDB.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L32">ChunkDB.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,17 +197,17 @@
 					<div class="tsd-signature tsd-kind-icon">storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChunkStorage</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L22">ChunkDB.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L30">ChunkDB.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="storagedriver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> storage<wbr>Driver</h3>
-					<div class="tsd-signature tsd-kind-icon">storage<wbr>Driver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IStorageDriver</span></div>
+					<div class="tsd-signature tsd-kind-icon">storage<wbr>Driver<span class="tsd-signature-symbol">:</span> <a href="../interfaces/istoragedriver.html" class="tsd-signature-type" data-tsd-kind="Interface">IStorageDriver</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L29">ChunkDB.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L36">ChunkDB.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,13 +217,45 @@
 					<div class="tsd-signature tsd-kind-icon">store<wbr>Subscriptions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L31">ChunkDB.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L38">ChunkDB.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="applytransaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> apply<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Transaction<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, accessor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Accessor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L194">ChunkDB.ts:194</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Подготовка нового чанка данных и
+									сохранение транзакции в пространстве данных</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spaceID: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>accessor: <span class="tsd-signature-type">Accessor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 					<a name="collection" class="tsd-anchor"></a>
 					<h3>collection</h3>
@@ -254,7 +266,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L86">ChunkDB.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L97">ChunkDB.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -274,16 +286,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getflatchain" class="tsd-anchor"></a>
-					<h3>get<wbr>Flat<wbr>Chain</h3>
+					<a name="connect" class="tsd-anchor"></a>
+					<h3>connect</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Flat<wbr>Chain<span class="tsd-signature-symbol">(</span>head<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AbstractChunk</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRecord</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L164">ChunkDB.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L52">ChunkDB.ts:52</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getflatchain" class="tsd-anchor"></a>
+					<h3>get<wbr>Flat<wbr>Chain</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Flat<wbr>Chain<span class="tsd-signature-symbol">(</span>head<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="abstractchunk.html" class="tsd-signature-type" data-tsd-kind="Class">AbstractChunk</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#irecord" class="tsd-signature-type" data-tsd-kind="Type alias">IRecord</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L166">ChunkDB.ts:166</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +324,7 @@
 									<h5>maxDepth: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">AbstractChunk</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">IRecord</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="abstractchunk.html" class="tsd-signature-type" data-tsd-kind="Class">AbstractChunk</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#irecord" class="tsd-signature-type" data-tsd-kind="Type alias">IRecord</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -309,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L93">ChunkDB.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L104">ChunkDB.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,23 +352,65 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="subscribe" class="tsd-anchor"></a>
-					<h3>subscribe</h3>
+					<a name="space" class="tsd-anchor"></a>
+					<h3>space</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
-						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">space<span class="tsd-signature-symbol">(</span>spaceId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/ispace.html" class="tsd-signature-type" data-tsd-kind="Interface">ISpace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="dataspace.html" class="tsd-signature-type" data-tsd-kind="Class">DataSpace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L67">ChunkDB.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L88">ChunkDB.ts:88</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get <a href="dataspace.html">DataSpace</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>spaceId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/ispace.html" class="tsd-signature-type" data-tsd-kind="Interface">ISpace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="dataspace.html" class="tsd-signature-type" data-tsd-kind="Class">DataSpace</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="subscribe" class="tsd-anchor"></a>
+					<h3>subscribe</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/subscription.html" class="tsd-signature-type" data-tsd-kind="Interface">Subscription</a></li>
+						<li class="tsd-signature tsd-kind-icon">subscribe<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/subscription.html" class="tsd-signature-type" data-tsd-kind="Interface">Subscription</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L64">ChunkDB.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe for any changes</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cb: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -354,33 +425,33 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-									</ul>
-									<ul class="tsd-descriptions">
-										<li class="tsd-description">
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/subscription.html" class="tsd-signature-type" data-tsd-kind="Interface">Subscription</a></h4>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L68">ChunkDB.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L71">ChunkDB.ts:71</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribe for any changes on space</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>spaceID: <span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>spaceID: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>cb: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Callback</p>
+									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -395,19 +466,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter-signature">
-									<ul class="tsd-signatures tsd-kind-type-literal">
-										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-									</ul>
-									<ul class="tsd-descriptions">
-										<li class="tsd-description">
-											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/subscription.html" class="tsd-signature-type" data-tsd-kind="Interface">Subscription</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -415,14 +474,14 @@
 					<a name="transaction" class="tsd-anchor"></a>
 					<h3>transaction</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">transaction<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span>, transaction<span class="tsd-signature-symbol">: </span><a href="../modules.html#transaction" class="tsd-signature-type" data-tsd-kind="Type alias">Transaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UpdateEvent</span><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">transaction<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span>, config<span class="tsd-signature-symbol">: </span><a href="../interfaces/itransactionconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">ITransactionConfig</a>, transaction<span class="tsd-signature-symbol">: </span><a href="../modules.html#transaction" class="tsd-signature-type" data-tsd-kind="Type alias">Transaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UpdateEvent</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">transaction<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, transaction<span class="tsd-signature-symbol">: </span><a href="../modules.html#transaction" class="tsd-signature-type" data-tsd-kind="Type alias">Transaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UpdateEvent</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">transaction<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><a href="../interfaces/itransactionconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">ITransactionConfig</a>, transaction<span class="tsd-signature-symbol">: </span><a href="../modules.html#transaction" class="tsd-signature-type" data-tsd-kind="Type alias">Transaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UpdateEvent</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L132">ChunkDB.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L143">ChunkDB.ts:143</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +499,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>spaceID: <span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>spaceID: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>transaction: <a href="../modules.html#transaction" class="tsd-signature-type" data-tsd-kind="Type alias">Transaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -453,13 +512,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L133">ChunkDB.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/3a05c09/packages/core/src/ChunkDB.ts#L144">ChunkDB.ts:144</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>spaceID: <span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>spaceID: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
 									<h5>config: <a href="../interfaces/itransactionconfig.html" class="tsd-signature-type" data-tsd-kind="Interface">ITransactionConfig</a></h5>
@@ -469,32 +528,6 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UpdateEvent</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="updatespacerefs" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Space<wbr>Refs</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">update<wbr>Space<wbr>Refs<span class="tsd-signature-symbol">(</span>spaceID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span>, refs<span class="tsd-signature-symbol">: </span><a href="../modules.html#refs" class="tsd-signature-type" data-tsd-kind="Type alias">Refs</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/97ed7b6/packages/core/src/ChunkDB.ts#L185">ChunkDB.ts:185</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>spaceID: <span class="tsd-signature-type">Brand</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;SpaceID&quot;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>refs: <a href="../modules.html#refs" class="tsd-signature-type" data-tsd-kind="Type alias">Refs</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RECORDS</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -510,9 +543,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="../enums/priority.html" class="tsd-kind-icon">Priority</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-has-type-parameter">
@@ -531,12 +561,6 @@
 								<a href="chunkdb.html#ready" class="tsd-kind-icon">ready</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="chunkdb.html#ready_" class="tsd-kind-icon">ready$</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="chunkdb.html#spacesubscriptions" class="tsd-kind-icon">space<wbr>Subscriptions</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="chunkdb.html#spaces" class="tsd-kind-icon">spaces</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -548,8 +572,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="chunkdb.html#storesubscriptions" class="tsd-kind-icon">store<wbr>Subscriptions</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="chunkdb.html#applytransaction" class="tsd-kind-icon">apply<wbr>Transaction</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="chunkdb.html#collection" class="tsd-kind-icon">collection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="chunkdb.html#connect" class="tsd-kind-icon">connect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="chunkdb.html#getflatchain" class="tsd-kind-icon">get<wbr>Flat<wbr>Chain</a>
@@ -558,72 +588,18 @@
 								<a href="chunkdb.html#run" class="tsd-kind-icon">run</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="chunkdb.html#space" class="tsd-kind-icon">space</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="chunkdb.html#subscribe" class="tsd-kind-icon">subscribe</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="chunkdb.html#transaction" class="tsd-kind-icon">transaction</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="chunkdb.html#updatespacerefs" class="tsd-kind-icon">update<wbr>Space<wbr>Refs</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="collectionconfig.html" class="tsd-kind-icon">Collection<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="inmemorychunkstorage.html" class="tsd-kind-icon">In<wbr>Memory<wbr>Chunk<wbr>Storage</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="space.html" class="tsd-kind-icon">Space</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/ichunkdbconfig.html" class="tsd-kind-icon">IChunkDBConfig</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/icollectiontypes.html" class="tsd-kind-icon">ICollection<wbr>Types</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/irefcollection.html" class="tsd-kind-icon">IRef<wbr>Collection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/ispace.html" class="tsd-kind-icon">ISpace</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/itransactionconfig.html" class="tsd-kind-icon">ITransaction<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/runner.html" class="tsd-kind-icon">Runner</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#chunkid" class="tsd-kind-icon">ChunkID</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../modules.html#collectiontype" class="tsd-kind-icon">Collection<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../modules.html#icollectionconfig" class="tsd-kind-icon">ICollection<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#id" class="tsd-kind-icon">ID</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#primitive" class="tsd-kind-icon">Primitive</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../modules.html#refs" class="tsd-kind-icon">Refs</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#spaceid" class="tsd-kind-icon">SpaceID</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="../modules.html#transaction" class="tsd-kind-icon">Transaction</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../modules.html#uuid" class="tsd-kind-icon">UUID</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -641,6 +617,10 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
