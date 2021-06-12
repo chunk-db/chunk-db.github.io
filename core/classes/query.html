@@ -102,6 +102,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="query.html#_query" class="tsd-kind-icon">_query</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="query.html#db" class="tsd-kind-icon">db</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="query.html#delayedref" class="tsd-kind-icon">delayed<wbr>Ref</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="query.html#model" class="tsd-kind-icon">model</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -119,28 +120,31 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Query&lt;T&gt;<span class="tsd-signature-symbol">(</span>db<span class="tsd-signature-symbol">: </span><a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, delayedRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DelayedRef</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IQuery</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type" data-tsd-kind="Class">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Query&lt;T&gt;<span class="tsd-signature-symbol">(</span>db<span class="tsd-signature-symbol">: </span><a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a>, delayedRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DelayedRef</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, model<span class="tsd-signature-symbol">: </span><a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IQuery</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="query.html" class="tsd-signature-type" data-tsd-kind="Class">Query</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/afa6792/packages/core/src/query.ts#L13">query.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/e1ccbb4/packages/core/src/query.ts#L13">query.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules.html#irecord" class="tsd-signature-type" data-tsd-kind="Type alias">IRecord</a> = <a href="../modules.html#irecord" class="tsd-signature-type" data-tsd-kind="Type alias">IRecord</a></h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span> = <span class="tsd-signature-type">object</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>db: <a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>db: <a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a></h5>
 								</li>
 								<li>
 									<h5>delayedRef: <span class="tsd-signature-type">DelayedRef</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>model: <a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>query: <span class="tsd-signature-type">IQuery</span></h5>
@@ -159,14 +163,14 @@
 					<div class="tsd-signature tsd-kind-icon">_query<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IQuery</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/afa6792/packages/core/src/query.ts#L13">query.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/e1ccbb4/packages/core/src/query.ts#L13">query.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="db" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="chunkdb.html" class="tsd-signature-type" data-tsd-kind="Class">ChunkDB</a></div>
 					<aside class="tsd-sources">
 					</aside>
 				</section>
@@ -177,6 +181,13 @@
 					<aside class="tsd-sources">
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="model" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> model</h3>
+					<div class="tsd-signature tsd-kind-icon">model<span class="tsd-signature-symbol">:</span> <a href="model.html" class="tsd-signature-type" data-tsd-kind="Class">Model</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
@@ -184,22 +195,22 @@
 					<a name="exec" class="tsd-anchor"></a>
 					<h3>exec</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">exec&lt;R&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Cursor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">exec&lt;R&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cursor.html" class="tsd-signature-type" data-tsd-kind="Class">Cursor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/afa6792/packages/core/src/query.ts#L21">query.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/e1ccbb4/packages/core/src/query.ts#L22">query.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>R<span class="tsd-signature-symbol">: </span><a href="../modules.html#irecord" class="tsd-signature-type" data-tsd-kind="Type alias">IRecord</a> = <span class="tsd-signature-type">T</span></h4>
+									<h4>R<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span> = <span class="tsd-signature-type">T</span></h4>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Cursor</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="cursor.html" class="tsd-signature-type" data-tsd-kind="Class">Cursor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -231,6 +242,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="query.html#delayedref" class="tsd-kind-icon">delayed<wbr>Ref</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="query.html#model" class="tsd-kind-icon">model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="query.html#exec" class="tsd-kind-icon">exec</a>
