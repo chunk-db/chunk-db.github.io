@@ -107,6 +107,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="indexeddbdriver.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="indexeddbdriver.html#loadallspaces" class="tsd-kind-icon">load<wbr>All<wbr>Spaces</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="indexeddbdriver.html#loadchunk" class="tsd-kind-icon">load<wbr>Chunk</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="indexeddbdriver.html#loadspace" class="tsd-kind-icon">load<wbr>Space</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="indexeddbdriver.html#markdraftchunkasunused" class="tsd-kind-icon">mark<wbr>Draft<wbr>Chunk<wbr>AsUnused</a></li>
@@ -129,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L19">index.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L19">index.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -154,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDBDatabase</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L17">index.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L17">index.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -171,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">indexedDB<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IDBFactory</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L16">index.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L16">index.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +182,7 @@
 					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L18">index.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L18">index.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">spaces<wbr>Collection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L19">index.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L19">index.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -208,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L114">index.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L125">index.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -229,10 +230,28 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.connect</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L33">index.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L33">index.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadallspaces" class="tsd-anchor"></a>
+					<h3>load<wbr>All<wbr>Spaces</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>All<wbr>Spaces<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ISpace</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of IStorageDriver.loadAllSpaces</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L89">index.ts:89</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ISpace</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -247,7 +266,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.loadChunk</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L60">index.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L60">index.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -271,7 +290,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.loadSpace</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L89">index.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L100">index.ts:100</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -295,7 +314,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.markDraftChunkAsUnused</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L84">index.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L84">index.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -319,7 +338,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.saveChunk</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L71">index.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L71">index.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -343,7 +362,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of IStorageDriver.saveSpace</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/172daae/packages/idb/src/index.ts#L100">index.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/6b9464c/packages/idb/src/index.ts#L111">index.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -396,6 +415,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="indexeddbdriver.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="indexeddbdriver.html#loadallspaces" class="tsd-kind-icon">load<wbr>All<wbr>Spaces</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="indexeddbdriver.html#loadchunk" class="tsd-kind-icon">load<wbr>Chunk</a>
