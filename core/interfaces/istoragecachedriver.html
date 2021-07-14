@@ -92,6 +92,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istoragecachedriver.html#clearchunks" class="tsd-kind-icon">clear<wbr>Chunks</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="istoragecachedriver.html#clearspaces" class="tsd-kind-icon">clear<wbr>Spaces</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="istoragecachedriver.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="istoragecachedriver.html#deletespace" class="tsd-kind-icon">delete<wbr>Space</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="istoragecachedriver.html#loadallspaces" class="tsd-kind-icon">load<wbr>All<wbr>Spaces</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="istoragecachedriver.html#loadchunk" class="tsd-kind-icon">load<wbr>Chunk</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="istoragecachedriver.html#loadspace" class="tsd-kind-icon">load<wbr>Space</a></li>
@@ -116,7 +117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L32">storage.types.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L34">storage.types.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -133,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L35">storage.types.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L37">storage.types.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -151,9 +152,33 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#connect">connect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L7">storage.types.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L7">storage.types.ts:7</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="deletespace" class="tsd-anchor"></a>
+					<h3>delete<wbr>Space</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Space<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><a href="../modules.html#spaceid" class="tsd-signature-type" data-tsd-kind="Type alias">SpaceID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#deletespace">deleteSpace</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L23">storage.types.ts:23</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <a href="../modules.html#spaceid" class="tsd-signature-type" data-tsd-kind="Type alias">SpaceID</a></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -169,7 +194,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#loadallspaces">loadAllSpaces</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L17">storage.types.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L17">storage.types.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="ispace.html" class="tsd-signature-type" data-tsd-kind="Interface">ISpace</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -187,7 +212,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#loadchunk">loadChunk</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L10">storage.types.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L10">storage.types.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -211,7 +236,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#loadspace">loadSpace</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L19">storage.types.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L19">storage.types.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -235,7 +260,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#markdraftchunkasunused">markDraftChunkAsUnused</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L14">storage.types.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L14">storage.types.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -258,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L30">storage.types.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L32">storage.types.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -282,7 +307,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#savechunk">saveChunk</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L12">storage.types.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L12">storage.types.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -306,7 +331,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="istoragedriver.html">IStorageDriver</a>.<a href="istoragedriver.html#savespace">saveSpace</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/cd329ef/packages/core/src/storage.types.ts#L21">storage.types.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/chunk-db/chunk-db/blob/ea84157/packages/core/src/storage.types.ts#L21">storage.types.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -344,6 +369,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="istoragecachedriver.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="istoragecachedriver.html#deletespace" class="tsd-kind-icon">delete<wbr>Space</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="istoragecachedriver.html#loadallspaces" class="tsd-kind-icon">load<wbr>All<wbr>Spaces</a>
